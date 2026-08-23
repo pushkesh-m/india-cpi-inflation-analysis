@@ -33,4 +33,4 @@ Python, Pandas, Matplotlib, Streamlit
 
 ## Author
 
-Pushkesh Mital | [GitHub](https://github.com/pushkesh-m) | [LinkedIn](https://www.linkedin.com/in/pushkesh-mital)
+Pushkesh Maheshwari | [GitHub](https://github.com/pushkesh-m) | [LinkedIn](https://www.linkedin.com/in/pushkesh-mital)
