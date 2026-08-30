@@ -1,36 +1,54 @@
 # India CPI Inflation Analysis (2013-2023)
 
-Interactive Streamlit dashboard exploring India's Consumer Price Index across 10 years. Pick a year range, sector, and category from the sidebar - all 7 charts update instantly.
+An interactive Streamlit dashboard exploring India's Consumer Price Index across a decade. Filter by year range, sector, and category from the sidebar - all charts update instantly.
 
-## What's inside
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://india-cpi-inflation-analysis.streamlit.app/)
 
-Seven questions answered across tabs:
+---
 
-1. Overall CPI trend (2013-2023)
-2. Which category rose the most
-3. Food vs Fuel during COVID (2019-2021)
-4. Rural vs Urban comparison
-5. Seasonal patterns by month
-6. Food and Fuel correlation
-7. Biggest single-year spike
+## What's Inside
 
-## Run it locally
+Seven analysis questions, each with its own tab:
+
+| Tab | Question |
+|---|---|
+| Trend | How has overall CPI moved from 2013 to 2023? |
+| Category Rise | Which category increased the most over the decade? |
+| COVID Impact | How did Food and Fuel behave during 2019-2021? |
+| Rural vs Urban | Where is inflation hitting harder? |
+| Seasonality | Which months consistently see higher CPI? |
+| Correlation | How closely do Food and Fuel move together? |
+| YoY Spike | Which year saw the biggest single-year jump? |
+
+---
+
+## Run Locally
 
 ```bash
-pip install streamlit pandas matplotlib seaborn
+git clone https://github.com/pushkesh-m/india-cpi-inflation-analysis.git
+cd india-cpi-inflation-analysis
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
+---
+
 ## Data
 
-All India Consumer Price Index dataset from Kaggle (MOSPI). Covers Rural, Urban, and combined figures across 8 categories from 2013 to 2023.
+**Source:** All India Consumer Price Index - MOSPI via Kaggle
 
-Two cleaning issues in the raw data - a typo ('Marcrh' for March) and trailing whitespace on November. Fixed before any analysis runs.
+Covers Rural, Urban, and combined figures across 8 categories (Food and Beverages, Fuel and Light, Clothing, Health, Education, Transport, Vegetables, Cereals) from January 2013 to December 2023.
+
+Two issues fixed before analysis runs - a typo (`Marcrh` for March) and trailing whitespace on month names.
+
+---
 
 ## Stack
 
-Python, Pandas, Matplotlib, Streamlit
+- [Streamlit](https://streamlit.io/) - app framework
+- [Pandas](https://pandas.pydata.org/) - data manipulation
+- [Matplotlib](https://matplotlib.org/) + [Seaborn](https://seaborn.pydata.org/) - charts
 
-## Author
+---
 
-Pushkesh Maheshwari | [GitHub](https://github.com/pushkesh-m) | [LinkedIn](https://www.linkedin.com/in/pushkesh-mital)
+**GitHub:** [pushkesh-m](https://github.com/pushkesh-m) | **LinkedIn:** [Pushkesh Maheshwari](https://www.linkedin.com/in/pushkesh-mital)
