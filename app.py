@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Pushk\Desktop\COURSES\PROJECTS\STREAMLIT\india-CPI-inflation-analysis\All India Consumer Price Index.csv")
+    df = pd.read_csv(os.path.join(os.path.dirname(__file__), "All India Consumer Price Index.csv"))
     df['Month'] = df['Month'].str.replace('Marcrh', 'March')
     df['Month'] = df['Month'].str.strip()
     return df
